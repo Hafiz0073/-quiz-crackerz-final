@@ -3,14 +3,15 @@ import { useLoaderData } from 'react-router-dom';
 import QuizOption from '../QuizOption/QuizOption';
 
 const Quiz = () => {
-    const quiz = useLoaderData().data.questions;
+    const quiz = useLoaderData().data;
     // const { id, name } = quiz
     // console.log(name)
     return (
         <div>
-            <h2>Quiz Quantity{quiz.length}</h2>
+            <h4 className='text-center'>{quiz.name}</h4>
             {
-                quiz.map(qz => <QuizOption
+
+                quiz.questions.map(qz => <QuizOption
                     key={quiz.id}
                     qz={qz}
                 ></QuizOption>)
