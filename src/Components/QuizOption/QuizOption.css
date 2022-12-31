@@ -1,0 +1,11 @@
+.quiz-container{
+background-color:lightcyan;
+padding : 38px;
+margin: 0 auto;
+}
+.quiz-container h4{
+    margin-bottom:18px;
+}
+.option-container{
+  padding-right: 20px
+}

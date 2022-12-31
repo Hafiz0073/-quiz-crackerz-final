@@ -6,33 +6,6 @@ import Container from 'react-bootstrap/Container';
 
 const Home = () => {
     const topic = useLoaderData();
-    // const [cart, setCart] = useState([])
-    // const [quiz, setQuiz] = useState([])
-    // const handleAddToCart = (tshirt) => {
-    //     const exist = cart.find(ts => ts._id === tshirt._id);
-    //     if (exist) {
-    //         alert('tshirt already added')
-    //     }
-    //     else {
-    //         const newCart = [...cart, tshirt]
-    //         setCart(newCart);
-    //         alert('Successfully added')
-    //     }
-    //     // console.log(tshirt)
-
-    // }
-    // const handleLearnTopic = (topic) => {
-    //     const exist = quiz.find(qz => qz.id === topic.id)
-    //     console.log(topic, quiz)
-    //     return handleLearnTopic;
-    // }
-    // const [topic1, setTopic] = useState(topic.data);
-    // // console.log(topic1)
-    // const handleAddToCart = (topic) => {
-    //     const exist = topic1.find(ts => ts.id === topic.id);
-
-    //     const newCart = [...topic1, topic]
-    //     setTopic(newCart);
 
 
     return (
