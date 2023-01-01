@@ -31,6 +31,7 @@ const Home = () => {
 
             </div>
             <div>
+                <h4 >Statistics based on topic quizes </h4>
                 <Statistics></Statistics>
             </div>
 
