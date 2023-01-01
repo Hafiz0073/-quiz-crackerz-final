@@ -30,6 +30,9 @@ const Home = () => {
 
 
             </div>
+            <div>
+                <Statistics></Statistics>
+            </div>
 
         </Container>
     );

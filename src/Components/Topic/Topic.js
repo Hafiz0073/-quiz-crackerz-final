@@ -8,7 +8,7 @@ import CardGroup from 'react-bootstrap/CardGroup'
 import Row from 'react-bootstrap/Row';
 
 const Topic = ({ topic }) => {
-    const { id, name, logo, total } = topic;
+    const { id, name, logo } = topic;
     const topicNavigate = useNavigate();
     const handleTopicNavigate = () => {
         topicNavigate(`/quiz/${id}`)

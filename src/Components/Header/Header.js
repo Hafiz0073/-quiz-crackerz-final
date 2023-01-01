@@ -19,17 +19,18 @@ const Header = () => {
             <Container>
                 <Navbar.Brand href="./">Learning Pro</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
+                <Navbar.Collapse id="responsive-navbar-nav" className='justify-content-end' >
                     <div className='flex justify-end'>
                         <Nav variant="pills" defaultActiveKey="/" >
                             <Nav.Item>
                                 <Nav.Link href="/">Home</Nav.Link>
                             </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link href="/topic">Topic</Nav.Link>
-                            </Nav.Item>
+
                             <Nav.Item>
                                 <Nav.Link href="/statistics">Statistics</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link href="/blogs">Blogs</Nav.Link>
                             </Nav.Item>
 
                         </Nav>
