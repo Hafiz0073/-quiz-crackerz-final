@@ -1,0 +1,18 @@
+.main-nav{
+    display:flex;
+    justify-content:space-evenly;
+}
+.nav-menu{
+    display: flex;
+}
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .nav-menu{
+    padding-left:10px;
+} }
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { .nav-menu{
+    padding-left:5px;
+}}
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { .nav-menu{
+    padding-left:5px;
+} }

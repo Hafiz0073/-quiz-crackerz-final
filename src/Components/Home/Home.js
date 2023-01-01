@@ -3,16 +3,17 @@ import { useLoaderData } from 'react-router-dom';
 import Topic from '../Topic/Topic';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
+import Statistics from '../Statistics/Statistics';
 
 const Home = () => {
     const topic = useLoaderData();
-
 
     return (
         <Container>
             <div style={{ backgroundColor: 'lightcyan', padding: '20px' }}>
                 <h2>Learning Pro</h2>
                 <p>You will Develope your career the below topics</p>
+                <p>{topic.data[2].length}</p>
             </div>
             <div style={{ margin: '27px' }}>
 
@@ -24,9 +25,10 @@ const Home = () => {
                                 key={topic.id}
                                 topic={topic}
                             ></Topic>)
-
                     }
                 </Row>
+
+
             </div>
 
         </Container>

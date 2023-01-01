@@ -9,7 +9,7 @@ import Modal from 'react-bootstrap/Modal';
 import { Button } from 'react-bootstrap';
 
 const QuizOption = ({ qz }) => {
-    const { name, correctAnswer, id, question, options } = qz;
+    const { name, correctAnswer, id, question, options, total } = qz;
     const questionSlice = question.slice(3, -4);
     // console.log(options[0]);
     const validation = (option) => {
@@ -18,9 +18,9 @@ const QuizOption = ({ qz }) => {
         if (correct) {
             alert('your ans is correct')
         } else {
-            alert('false')
+            alert('Wrong Answer')
         }
-        console.log(correctAnswer);
+        // console.log(correctAnswer);
     }
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -31,6 +31,7 @@ const QuizOption = ({ qz }) => {
 
     return (
         <div className='quiz-container'>
+
 
             <h4>{questionSlice}</h4>
             <div className='quiz-option-container'>

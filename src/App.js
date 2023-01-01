@@ -10,6 +10,7 @@ import Home from './Components/Home/Home';
 import Topic from './Components/Topic/Topic';
 import Quiz from './Components/Quiz/Quiz';
 import Container from 'react-bootstrap/Container';
+import Statistics from './Components/Statistics/Statistics';
 
 
 function App() {
@@ -28,7 +29,14 @@ function App() {
           loader: ({ params }) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizID}`),
           element: <Quiz></Quiz>
         },
-
+        {
+          path: '/topic',
+          element: <Topic></Topic>
+        },
+        {
+          path: '/statistics',
+          element: <Statistics></Statistics>
+        }
 
       ]
     },
@@ -43,7 +51,7 @@ function App() {
 
     <Container>
       <RouterProvider router={router}></RouterProvider>
-
+      <Statistics></Statistics>
 
     </Container>
 
